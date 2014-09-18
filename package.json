@@ -9,6 +9,7 @@
   "dependencies": {
     "lab": "^4.0.2",
     "lodash": "^2.4.1",
+    "string": "^2.0.1",
     "string-to-json": "^0.1.0"
   },
   "devDependencies": {},
