@@ -1,0 +1,22 @@
+{
+  "fst_primitive": "value01",
+  "nested.fst_primitive": "value02",
+  "nested.nested.fst_primitive": "value03",
+  "nested.nested.nested.fst_primitive": "value04",
+  "nested.nested.nested.snd_primitive": "value05",
+  "nested.nested.snd_primitive": "value06",
+  "nested.snd_primitive": "value07",
+  "snd_primitive": "value08",
+  "array.0": "value09",
+  "array.1": "value10",
+  "array.2.fst_primitive": "value11",
+  "array.2.snd_primitive": "value12",
+  "array.3.fst_primitive": "value13",
+  "array.3.snd_primitive": "value14",
+  "array.3.nested.fst_primitive": "value15",
+  "array.3.nested.snd_primitive": "value16",
+  "array.3.nested.nested.fst_primitive": "value17",
+  "array.3.nested.nested.array.0": "value18",
+  "array.3.nested.array.0.fst_primitive": "value19",
+  "array.3.nested.array.0.nested.fst_primitive": "value20"
+}

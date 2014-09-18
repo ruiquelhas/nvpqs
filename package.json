@@ -1,0 +1,34 @@
+{
+  "name": "nvpqs",
+  "version": "0.1.0",
+  "description": "Utilities for name-value pair encoded querystrings.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lab": "^4.0.2",
+    "lodash": "^2.4.1",
+    "string-to-json": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/.bin/lab -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruiquelhas/nvpqs.git"
+  },
+  "keywords": [
+    "querystring",
+    "qs",
+    "nvp",
+    "encoding"
+  ],
+  "author": "Rui Quelhas <rfpquelhas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruiquelhas/nvpqs/issues"
+  },
+  "homepage": "https://github.com/ruiquelhas/nvpqs"
+}
