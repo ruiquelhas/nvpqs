@@ -37,13 +37,13 @@ lab.experiment('Single-level array utilities', function () {
       done();
     });
 
-    // lab.test('returns a matching querystring if the object is not empty nor null', function (done) {
-    //   var output = nvpqs.stringify(object_stub);
+    lab.test('returns a matching querystring if the object is not empty nor null', function (done) {
+      var output = nvpqs.stringify(object_stub);
 
-    //   Lab.expect(output).to.be.a('string');
-    //   Lab.expect(output).to.equal(qs.stringify(nvp_stub));
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub));
 
-    //   done();
-    // });
+      done();
+    });
   });
 });
