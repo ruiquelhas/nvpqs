@@ -10,7 +10,7 @@ var nvpqs = require('../');
 var nvp_stub = require('./stubs/nvp.json');
 var object_stub = require('./stubs/object.json');
 
-lab.experiment('Single-level array utilities', function () {
+lab.experiment('NVP encoded querystring utility belt', function () {
   lab.experiment('parses a querystring to proper JavaScript object and', function () {
     lab.test('returns empty object when the querystring is blank', function (done) {
       var input = '', output = nvpqs.parse(input);

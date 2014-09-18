@@ -36,6 +36,9 @@
             "nested": {
               "fst_primitive": "value20"
             }
+          },
+          {
+            "fst_primitive": "value21"
           }
         ]
       }

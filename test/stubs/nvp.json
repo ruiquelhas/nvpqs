@@ -18,5 +18,6 @@
   "array.3.nested.nested.fst_primitive": "value17",
   "array.3.nested.nested.array.0": "value18",
   "array.3.nested.array.0.fst_primitive": "value19",
-  "array.3.nested.array.0.nested.fst_primitive": "value20"
+  "array.3.nested.array.0.nested.fst_primitive": "value20",
+  "array.3.nested.array.1.fst_primitive": "value21"
 }
