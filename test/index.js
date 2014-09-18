@@ -46,7 +46,7 @@ lab.experiment('NVP encoded querystring utility belt', function () {
       done();
     });
 
-    lab.test('returns a matching querystring if the object is not empty nor null', function (done) {
+    lab.test('returns a matching querystring using a custom delimiter', function (done) {
       var output = nvpqs.stringify(object_stub, '-');
 
       Lab.expect(output).to.be.a('string');
