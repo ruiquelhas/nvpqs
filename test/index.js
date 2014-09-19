@@ -56,11 +56,38 @@ lab.experiment('NVP encoded querystring utility belt', function () {
       done();
     });
 
-    lab.test('returns a matching querystring using a custom delimiter', function (done) {
+    lab.test('returns a matching querystring using a custom delimiter character', function (done) {
       var output = nvpqs.stringify(object_stub, '-');
 
       Lab.expect(output).to.be.a('string');
       Lab.expect(output).to.equal(qs.stringify(nvp_stub).replace(/\./g, '-'));
+
+      done();
+    });
+
+    lab.test('returns a matching querystring with default options for invalid delimiter', function (done) {
+      var output = nvpqs.stringify(object_stub, 'a');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub));
+
+      done();
+    });
+
+    lab.test('returns a matching querystring using a custom separator character', function (done) {
+      var output = nvpqs.stringify(object_stub, null, '+');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub).replace(/\&/g, '+'));
+
+      done();
+    });
+
+    lab.test('returns a matching querystring with default options for invalid separator', function (done) {
+      var output = nvpqs.stringify(object_stub, null, 'a');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub));
 
       done();
     });
