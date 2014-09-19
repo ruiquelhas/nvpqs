@@ -83,5 +83,32 @@ lab.experiment('NVP encoded querystring utility belt', function () {
 
       done();
     });
+
+    lab.test('returns a matching querystring using a custom assignment character', function (done) {
+      var output = nvpqs.stringify(object_stub, null, null, ':');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub).replace(/\=/g, ':'));
+
+      done();
+    });
+
+    lab.test('returns a matching querystring with default options for invalid assignment character', function (done) {
+      var output = nvpqs.stringify(object_stub, null, null, 'a');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub));
+
+      done();
+    });
+
+    lab.test('returns a matching querystring with default options for similiar custom characters', function (done) {
+      var output = nvpqs.stringify(object_stub, '.', '.', '.');
+
+      Lab.expect(output).to.be.a('string');
+      Lab.expect(output).to.equal(qs.stringify(nvp_stub));
+
+      done();
+    });
   });
 });
