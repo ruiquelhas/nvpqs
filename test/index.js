@@ -27,16 +27,6 @@ lab.experiment('NVP encoded querystring utility belt', function () {
 
       done();
     });
-
-    lab.test('returns matching object using a custom delimiter', function (done) {
-      var input = qs.stringify(nvp_stub).replace(/\./g, '-');
-      var output = nvpqs.parse(input, '-');
-
-      Lab.expect(output).to.be.a('object');
-      Lab.expect(output).to.deep.equal(object_stub);
-
-      done();
-    });
   });
 
   lab.experiment('stringifies a JavaScript object to a proper querystring and', function () {
@@ -55,7 +45,9 @@ lab.experiment('NVP encoded querystring utility belt', function () {
 
       done();
     });
+  });
 
+  lab.experiment('allows custom notitation delimiter and separator characters', function() {
     lab.test('returns a matching querystring using a custom delimiter character', function (done) {
       var output = nvpqs.stringify(object_stub, '-');
 
