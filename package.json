@@ -1,6 +1,6 @@
 {
   "name": "nvpqs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for name-value pair encoded querystrings.",
   "main": "index.js",
   "directories": {
