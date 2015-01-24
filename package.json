@@ -1,6 +1,6 @@
 {
   "name": "nvpqs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utilities for name-value pair encoded querystrings.",
   "main": "index.js",
   "directories": {
@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "dot-object": "^0.3.0",
-    "lab": "^4.0.2",
     "lodash": "^2.4.1",
-    "string": "^2.0.1"
+    "string": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "code": "^1.3.0",
+    "lab": "^5.2.1"
+  },
   "scripts": {
     "test": "./node_modules/.bin/lab -c"
   },
