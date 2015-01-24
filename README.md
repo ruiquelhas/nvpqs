@@ -1,4 +1,4 @@
-# nvpqs
+# nvpqs [![Build Status](https://travis-ci.org/ruiquelhas/nvpqs.png)](https://travis-ci.org/ruiquelhas/nvpqs)
 
 Utilities for name-value pair encoded querystrings.
 
