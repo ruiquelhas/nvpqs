@@ -7,15 +7,15 @@
     "test": "test"
   },
   "dependencies": {
-    "dot-object": "^0.10.0",
+    "dot-object": "^1.2.0",
     "lodash.clonedeep": "^3.0.0",
     "lodash.isobject": "^3.0.1",
     "lodash.keys": "^3.0.5",
     "string": "^3.1.1"
   },
   "devDependencies": {
-    "code": "^1.4.0",
-    "lab": "^5.5.1"
+    "code": "^1.5.0",
+    "lab": "^5.16.1"
   },
   "scripts": {
     "test": "./node_modules/.bin/lab -c"
