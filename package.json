@@ -2,7 +2,7 @@
   "name": "nvpqs",
   "version": "1.2.0",
   "description": "Utilities for name-value pair encoded querystrings.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
