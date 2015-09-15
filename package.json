@@ -18,7 +18,9 @@
     "lab": "^5.16.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/lab -c"
+    "test": "lab -a code -t 100 -L",
+    "test-tap": "lab -a code -r tap -o tests.tap",
+    "test-cov-html": "lab -a code -r html -o coverage.html"
   },
   "repository": {
     "type": "git",
