@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/ruiquelhas/nvpqs/issues"
   },
-  "homepage": "https://github.com/ruiquelhas/nvpqs"
+  "homepage": "https://github.com/ruiquelhas/nvpqs",
+  "engines": {
+    "node": ">=4.0.0"
+  }
 }
