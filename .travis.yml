@@ -1,4 +1,6 @@
+after_script: npm run coveralls
 language: node_js
 node_js:
+  - "4.0.0"
   - "0.11"
   - "0.10"

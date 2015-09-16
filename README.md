@@ -1,4 +1,4 @@
-# nvpqs [![Build Status](https://travis-ci.org/ruiquelhas/nvpqs.svg)](https://travis-ci.org/ruiquelhas/nvpqs) [![Dependencies](https://david-dm.org/ruiquelhas/nvpqs.svg)](https://david-dm.org/ruiquelhas/nvpqs)
+# nvpqs [![Build Status](https://travis-ci.org/ruiquelhas/nvpqs.svg)](https://travis-ci.org/ruiquelhas/nvpqs) [![Coverage Status](https://coveralls.io/repos/ruiquelhas/nvpqs/badge.svg)](https://coveralls.io/github/ruiquelhas/nvpqs) [![Dependencies](https://david-dm.org/ruiquelhas/nvpqs.svg)](https://david-dm.org/ruiquelhas/nvpqs)
 
 Utilities for name-value pair encoded querystrings.
 
@@ -24,7 +24,7 @@ array.1.nested.primitive=value7
 
 You call `parse` and you get the following object:
 
-```
+```json
 {
   primitive: "value1",
   nested: {
@@ -56,13 +56,13 @@ By default it works for name-value pairs encoded using dot notation (`.`), but y
 
 ### Parsing
 
-```
+```javascript
 nvpqs.parse(string, [del], [sep], [eq]);
 ```
 
 ### Stringifying
 
-```
+```javascript
 nvpqs.stringify(object, [del], [sep], [eq]);
 ```
 
@@ -76,6 +76,6 @@ var obj = nvpqs.parse('a=b&c.d=e&f.0=g')); // { a: 'b', c: { d: 'e' }, f: ['g']}
 var qs = nvpqs.stringify(obj); // 'a=b&c.d=e&f.0=g'
 ```
 
-## Issues and comments
+## Contributing
 
-You [know](https://github.com/ruiquelhas/nvpqs/issues) the [drill](https://github.com/ruiquelhas/nvpqs/pulls).
+Feel free to create [issues](https://github.com/ruiquelhas/nvpqs/issues) or submit [pull requests](https://github.com/ruiquelhas/nvpqs/pulls).
