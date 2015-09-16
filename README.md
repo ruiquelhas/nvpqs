@@ -24,7 +24,7 @@ array.1.nested.primitive=value7
 
 You call `parse` and you get the following object:
 
-```json
+```javascript
 {
   primitive: "value1",
   nested: {
@@ -56,13 +56,13 @@ By default it works for name-value pairs encoded using dot notation (`.`), but y
 
 ### Parsing
 
-```javascript
+```
 nvpqs.parse(string, [del], [sep], [eq]);
 ```
 
 ### Stringifying
 
-```javascript
+```
 nvpqs.stringify(object, [del], [sep], [eq]);
 ```
 
