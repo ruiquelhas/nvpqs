@@ -7,11 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "dot-object": "^1.2.0",
-    "lodash.clonedeep": "^3.0.0",
-    "lodash.isobject": "^3.0.1",
-    "lodash.keys": "^3.0.5",
-    "string": "^3.1.1"
+    "dot-object": "^1.3.0",
+    "lodash.clonedeep": "^3.0.2",
+    "lodash.isobject": "^3.0.2"
   },
   "devDependencies": {
     "code": "^2.0.1",
