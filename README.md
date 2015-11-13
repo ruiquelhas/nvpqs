@@ -1,81 +1,67 @@
-# nvpqs [![Build Status](https://travis-ci.org/ruiquelhas/nvpqs.svg)](https://travis-ci.org/ruiquelhas/nvpqs) [![Coverage Status](https://coveralls.io/repos/ruiquelhas/nvpqs/badge.svg)](https://coveralls.io/github/ruiquelhas/nvpqs) [![Dependencies](https://david-dm.org/ruiquelhas/nvpqs.svg)](https://david-dm.org/ruiquelhas/nvpqs)
+# nvpqs
 
-Utilities for name-value pair encoded querystrings.
+[NVP](https://developer.paypal.com/docs/classic/api/NVPAPIOverview/#id09C2F0D0DX4)
+parser. Like [querystring](https://nodejs.org/api/querystring.html), but for pairs
+where the name encodes primitive types, objects or arrays.
 
+[![NPM Version][fury-img]][fury-url]
+[![Build Status][travis-img]][travis-url]
+[![Coverage Status][coveralls-img]][coveralls-url]
+[![Dependencies][david-img]][david-url]
 
-## What is this
+## Table of Contents
 
-It's basically [querystring](https://nodejs.org/api/querystring.html) but for a string enconded as one or more name-value pairs, which keys might represent nested objects or arrays.
+- [Installation](#installation)
+- [Usage](#usage)
+    - [`parse(string, [del], [sep], [eq])`](#parses)
+    - [`stringify(object, [del], [sep], [eq])`](#dispositionheader)
 
+## Installation
 
-## How it works
+Install via [NPM](https://www.npmjs.org).
 
-Assuming you have the following querystring:
-
+```sh
+$ npm install nvqps
 ```
-primitive=value1&
-nested.primitive=value2&
-nested.nested.primitive=value3&
-array.0.primitive=value4&
-array.0.nested.primitive=value5&
-array.1.primitive=value6&
-array.1.nested.primitive=value7
-```
-
-You call `parse` and you get the following object:
-
-```javascript
-{
-  primitive: "value1",
-  nested: {
-    primitive: "value2",
-    nested: {
-      primitive: "value3"
-    }
-  },
-  array: [
-    {
-      primitive: "value4",
-      nested: {
-        primitive: "value5"
-      }
-    },
-    {
-      primitive: "value6",
-      nested: {
-        primitive: "value7"
-      }
-    }
-  ]
-}
-```
-
-Of course it also works the other way around, you just need to call `stringify`.
-
-By default it works for name-value pairs encoded using dot notation (`.`), but you can specify a custom delimiter. And, again, like [querystring](https://nodejs.org/api/querystring.html) you can also specify custom separator and assigment characters.
-
-### Parsing
-
-```
-nvpqs.parse(string, [del], [sep], [eq]);
-```
-
-### Stringifying
-
-```
-nvpqs.stringify(object, [del], [sep], [eq]);
-```
-
 
 ## Usage
 
-```javascript
+### `parse(string, [del], [sep], [eq])`
+
+Deserialize a NVP query string to an object. Optionally  override the default
+delimiter ('.'), separator ('&') and assignment ('=') characters.
+
+#### Example
+
+```js
+const nvpqs = require('nvpqs');
+
+nvpqs.parse('a=b&c.d=e&f.0=g')); // { a: 'b', c: { d: 'e' }, f: ['g']}
+```
+
+### `stringify(object, [del], [sep], [eq])`
+
+Serialize an object to a NVP query string. Optionally override the default
+delimiter ('.'), separator ('&') and assignment ('=') characters.
+
+#### Example
+
+```js
 var nvpqs = require('nvpqs');
 
-var obj = nvpqs.parse('a=b&c.d=e&f.0=g')); // { a: 'b', c: { d: 'e' }, f: ['g']}
-var qs = nvpqs.stringify(obj); // 'a=b&c.d=e&f.0=g'
+nvpqs.stringify(obj); // 'a=b&c.d=e&f.0=g'
 ```
 
 ## Contributing
 
-Feel free to create [issues](https://github.com/ruiquelhas/nvpqs/issues) or submit [pull requests](https://github.com/ruiquelhas/nvpqs/pulls).
+Feel free to open [issues](https://github.com/ruiquelhas/nvpqs/issues) or
+submit [pull requests](https://github.com/ruiquelhas/nvpqs/pulls).
+
+[coveralls-img]: https://coveralls.io/repos/ruiquelhas/nvpqs/badge.svg
+[coveralls-url]: https://coveralls.io/github/ruiquelhas/nvpqs
+[david-img]: https://david-dm.org/ruiquelhas/nvpqs.svg
+[david-url]: https://david-dm.org/ruiquelhas/nvpqs
+[fury-img]: https://badge.fury.io/js/nvpqs.svg
+[fury-url]: https://badge.fury.io/js/nvpqs
+[travis-img]: https://travis-ci.org/ruiquelhas/nvpqs.svg
+[travis-url]: https://travis-ci.org/ruiquelhas/nvpqs
