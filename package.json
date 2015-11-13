@@ -1,6 +1,6 @@
 {
   "name": "nvpqs",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Utilities for name-value pair encoded querystrings.",
   "main": "lib/index.js",
   "directories": {
@@ -19,6 +19,7 @@
     "lab": "^7.2.0"
   },
   "scripts": {
+    "changelog": "github_changelog_generator --header-label='# Changelog'",
     "test": "lab -a code -t 100 -L",
     "test-tap": "lab -a code -r tap -o tests.tap",
     "test-cov-html": "lab -a code -r html -o coverage.html",
