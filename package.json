@@ -1,7 +1,7 @@
 {
   "name": "nvpqs",
   "version": "2.0.0",
-  "description": "Utilities for name-value pair encoded querystrings.",
+  "description": "NVP querystring parser",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
