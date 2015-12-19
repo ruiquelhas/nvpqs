@@ -1,5 +1,20 @@
 # Changelog
 
+## [v2.0.2](https://github.com/ruiquelhas/nvpqs/tree/v2.0.2) (2015-12-19)
+[Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.1...v2.0.2)
+
+**Closed issues:**
+
+- Add contribution guidelines [\#11](https://github.com/ruiquelhas/nvpqs/issues/11)
+
+**Merged pull requests:**
+
+- Update documentation [\#12](https://github.com/ruiquelhas/nvpqs/pull/12) ([ruiquelhas](https://github.com/ruiquelhas))
+- Update lab to version 8.0.0 🚀 [\#10](https://github.com/ruiquelhas/nvpqs/pull/10) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+## [v2.0.1](https://github.com/ruiquelhas/nvpqs/tree/v2.0.1) (2015-11-14)
+[Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.0...v2.0.1)
+
 ## [v2.0.0](https://github.com/ruiquelhas/nvpqs/tree/v2.0.0) (2015-11-13)
 [Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v1.3.0...v2.0.0)
 
