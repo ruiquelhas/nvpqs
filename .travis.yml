@@ -1,4 +1,10 @@
 after_success: npm run coveralls
+
 language: node_js
+
 node_js:
-  - "4.0.0"
+  - "4.0"
+  - "4"
+  - "5"
+
+sudo: false
