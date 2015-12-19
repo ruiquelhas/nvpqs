@@ -30,7 +30,7 @@ Deserialize a NVP query string to an object. Optionally  override the default de
 ```js
 const nvpqs = require('nvpqs');
 
-nvpqs.parse('a=b&c.d=e&f.0=g')); // { a: 'b', c: { d: 'e' }, f: ['g']}
+nvpqs.parse('a=b&c.d=e&f.0=g'); // { a: 'b', c: { d: 'e' }, f: ['g'] }
 ```
 
 ### `stringify(object, [del], [sep], [eq])`
@@ -40,14 +40,10 @@ Serialize an object to a NVP query string. Optionally override the default delim
 #### Example
 
 ```js
-var nvpqs = require('nvpqs');
+const nvpqs = require('nvpqs');
 
-nvpqs.stringify(obj); // 'a=b&c.d=e&f.0=g'
+nvpqs.stringify({ a: 'b', c: { d: 'e' }, f: ['g'] }); // 'a=b&c.d=e&f.0=g'
 ```
-
-## Contributing
-
-Feel free to open [issues](https://github.com/ruiquelhas/nvpqs/issues) or submit [pull requests](https://github.com/ruiquelhas/nvpqs/pulls).
 
 [coveralls-img]: https://coveralls.io/repos/ruiquelhas/nvpqs/badge.svg
 [coveralls-url]: https://coveralls.io/github/ruiquelhas/nvpqs
