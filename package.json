@@ -7,16 +7,16 @@
     "test": "test"
   },
   "dependencies": {
-    "dot-object": "^1.3.0",
-    "lodash.isobject": "^3.0.2",
-    "lodash.reduce": "^3.1.2",
-    "lodash.some": "^3.2.3",
-    "lodash.transform": "^3.0.4"
+    "dot-object": "1.x.x",
+    "lodash.isobject": "3.x.x",
+    "lodash.reduce": "3.x.x",
+    "lodash.some": "3.x.x",
+    "lodash.transform": "3.x.x"
   },
   "devDependencies": {
-    "code": "^2.0.1",
-    "coveralls": "^2.11.4",
-    "lab": "^8.0.0"
+    "code": "2.x.x",
+    "coveralls": "2.x.x",
+    "lab": "8.x.x"
   },
   "scripts": {
     "changelog": "github_changelog_generator --header-label='# Changelog'",
@@ -30,10 +30,12 @@
     "url": "https://github.com/ruiquelhas/nvpqs.git"
   },
   "keywords": [
-    "querystring",
-    "qs",
+    "encoding",
     "nvp",
-    "encoding"
+    "parse",
+    "qs",
+    "querystring",
+    "stringify"
   ],
   "author": "Rui Quelhas <rfpquelhas@gmail.com>",
   "license": "MIT",
