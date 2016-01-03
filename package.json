@@ -14,7 +14,7 @@
     "lodash.transform": "3.x.x"
   },
   "devDependencies": {
-    "code": "2.x.x",
+    "code": "2.1.0",
     "coveralls": "2.x.x",
     "lab": "8.x.x"
   },
