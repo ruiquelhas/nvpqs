@@ -1,23 +1,8 @@
 {
   "name": "nvpqs",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "NVP querystring parser",
   "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "dot-object": "1.x.x",
-    "lodash.isobject": "3.x.x",
-    "lodash.reduce": "3.x.x",
-    "lodash.some": "3.x.x",
-    "lodash.transform": "3.x.x"
-  },
-  "devDependencies": {
-    "code": "2.x.x",
-    "coveralls": "2.x.x",
-    "lab": "8.x.x"
-  },
   "scripts": {
     "changelog": "github_changelog_generator --header-label='# Changelog'",
     "test": "lab -a code -t 100 -L",
@@ -43,6 +28,18 @@
     "url": "https://github.com/ruiquelhas/nvpqs/issues"
   },
   "homepage": "https://github.com/ruiquelhas/nvpqs",
+  "dependencies": {
+    "dot-object": "1.x.x",
+    "lodash.isobject": "3.x.x",
+    "lodash.reduce": "3.x.x",
+    "lodash.some": "3.x.x",
+    "lodash.transform": "3.x.x"
+  },
+  "devDependencies": {
+    "code": "2.x.x",
+    "coveralls": "2.x.x",
+    "lab": "8.x.x"
+  },
   "engines": {
     "node": ">= 4.0.0"
   }

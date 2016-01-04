@@ -1,5 +1,18 @@
 # Changelog
 
+## [v2.0.3](https://github.com/ruiquelhas/nvpqs/tree/v2.0.3) (2016-01-04)
+[Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.2...v2.0.3)
+
+**Closed issues:**
+
+- Fix documentation issues [\#15](https://github.com/ruiquelhas/nvpqs/issues/15)
+- Fix linting issues [\#14](https://github.com/ruiquelhas/nvpqs/issues/14)
+
+**Merged pull requests:**
+
+- Fix documentation issues [\#17](https://github.com/ruiquelhas/nvpqs/pull/17) ([ruiquelhas](https://github.com/ruiquelhas))
+- Fix linting issues [\#16](https://github.com/ruiquelhas/nvpqs/pull/16) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v2.0.2](https://github.com/ruiquelhas/nvpqs/tree/v2.0.2) (2015-12-19)
 [Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.1...v2.0.2)
 
