@@ -16,7 +16,7 @@
 Install via [NPM](https://www.npmjs.org).
 
 ```sh
-$ npm install nvqps
+$ npm install nvpqs
 ```
 
 ## Usage
@@ -28,9 +28,9 @@ Deserialize a NVP query string to an object. Optionally  override the default de
 #### Example
 
 ```js
-const nvpqs = require('nvpqs');
+const Nvpqs = require('nvpqs');
 
-nvpqs.parse('a=b&c.d=e&f.0=g'); // { a: 'b', c: { d: 'e' }, f: ['g'] }
+Nvpqs.parse('a=b&c.d=e&f.0=g'); // { a: 'b', c: { d: 'e' }, f: ['g'] }
 ```
 
 ### `stringify(object, [del], [sep], [eq])`
@@ -40,9 +40,9 @@ Serialize an object to a NVP query string. Optionally override the default delim
 #### Example
 
 ```js
-const nvpqs = require('nvpqs');
+const Nvpqs = require('nvpqs');
 
-nvpqs.stringify({ a: 'b', c: { d: 'e' }, f: ['g'] }); // 'a=b&c.d=e&f.0=g'
+Nvpqs.stringify({ a: 'b', c: { d: 'e' }, f: ['g'] }); // 'a=b&c.d=e&f.0=g'
 ```
 
 [coveralls-img]: https://coveralls.io/repos/ruiquelhas/nvpqs/badge.svg
