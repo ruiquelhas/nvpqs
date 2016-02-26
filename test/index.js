@@ -5,12 +5,12 @@ const Qs = require('querystring');
 const Lab = require('lab');
 const Code = require('code');
 
-const lab = exports.lab = Lab.script();
+const NVPStub = require('./stubs/nvp.json');
+const ObjectStub = require('./stubs/object.json');
 
 const Nvpqs = require('../');
 
-const NVPStub = require('./stubs/nvp.json');
-const ObjectStub = require('./stubs/object.json');
+const lab = exports.lab = Lab.script();
 
 lab.experiment('Nvpqs', () => {
 

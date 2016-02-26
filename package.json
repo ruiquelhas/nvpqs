@@ -31,16 +31,16 @@
   "dependencies": {
     "dot-object": "1.x.x",
     "lodash.isobject": "3.x.x",
-    "lodash.reduce": "3.x.x",
-    "lodash.some": "3.x.x",
-    "lodash.transform": "3.x.x"
+    "lodash.reduce": "4.x.x",
+    "lodash.some": "4.x.x",
+    "lodash.transform": "4.x.x"
   },
   "devDependencies": {
     "code": "2.x.x",
     "coveralls": "2.x.x",
-    "lab": "8.x.x"
+    "lab": "10.x.x"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">=4.0.0"
   }
 }
