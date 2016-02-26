@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.0.4](https://github.com/ruiquelhas/nvpqs/tree/v2.0.4) (2016-02-26)
+[Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.3...v2.0.4)
+
+**Merged pull requests:**
+
+- Update dependencies [\#18](https://github.com/ruiquelhas/nvpqs/pull/18) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v2.0.3](https://github.com/ruiquelhas/nvpqs/tree/v2.0.3) (2016-01-04)
 [Full Changelog](https://github.com/ruiquelhas/nvpqs/compare/v2.0.2...v2.0.3)
 
