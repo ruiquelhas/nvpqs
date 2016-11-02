@@ -30,7 +30,7 @@ lab.experiment('Nvpqs', () => {
             const output = Nvpqs.parse(Qs.stringify(NVPStub));
 
             Code.expect(output).to.be.an.object();
-            Code.expect(output).to.deep.equal(ObjectStub);
+            Code.expect(output).to.equal(ObjectStub);
             return done();
         });
     });
